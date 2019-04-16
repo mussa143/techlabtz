@@ -18,3 +18,20 @@ Route::get('/', function () {
 Route::get('/user', function () {
     return view('user.index');
 });
+
+Route::get('/proforma', function () {
+    return view('proforma.index');
+});
+
+Route::get('/invoice', function () {
+    return view('invoice.index');
+});
+
+Route::get('/clients', function () {
+    return view('customers.index');
+});
+
+Route::get('/userprofile', function () {
+    return view('user.profile');
+});
+

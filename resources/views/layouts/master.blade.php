@@ -36,25 +36,25 @@
           <li class="nav-item ">
             <a class="nav-link" href="{{url('/user')}}">
               <i class="material-icons">person</i>
-              <p>User Profile</p>
+              <p>Users</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./tables.html">
+            <a class="nav-link" href="{{url('/proforma')}}">
               <i class="material-icons">content_paste</i>
-              <p>Table List</p>
+              <p>Proforma Invoice</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./typography.html">
+            <a class="nav-link" href="{{url('/invoice')}}">
               <i class="material-icons">library_books</i>
-              <p>Typography</p>
+              <p>Invoices</p>
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./icons.html">
+            <a class="nav-link" href="{{url('/clients')}}">
               <i class="material-icons">bubble_chart</i>
-              <p>Icons</p>
+              <p>Our Clients</p>
             </a>
           </li>
           <li class="nav-item ">
@@ -128,7 +128,7 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="{{url('/userprofile')}}">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#">Log out</a>
