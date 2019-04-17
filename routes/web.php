@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('dashboard');
+    return view('index');
 });
 
 Route::get('/user', function () {
@@ -35,3 +35,11 @@ Route::get('/userprofile', function () {
     return view('user.profile');
 });
 
+Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
+Route::post('register', 'Auth\RegisterController@register');
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('dashboard');

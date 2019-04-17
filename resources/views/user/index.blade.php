@@ -4,7 +4,9 @@
 
 <div class="row">
             <div class="col-md-12">
+            <a href="" class="btn btn=primary">Register Users</a>
               <div class="card">
+              
                 <div class="card-header card-header-primary">
                   <h4 class="card-title ">Techlabtz Employees</h4>
                   <p class="card-category">Recent Users</p>
