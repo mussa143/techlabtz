@@ -34,7 +34,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="{{url('/user')}}">
+            <a class="nav-link" href="{{ route('users.index')}}">
               <i class="material-icons">person</i>
               <p>Users</p>
             </a>
@@ -105,7 +105,7 @@
                 </a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link" href="" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                   <i class="material-icons">notifications</i>
                   <span class="notification">5</span>
                   <p class="d-lg-none d-md-block">
@@ -131,7 +131,7 @@
                   <a class="dropdown-item" href="{{url('/userprofile')}}">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Log out</a>
+                  <a class="dropdown-item" href="{{ route('logout') }}">Log out</a>
                 </div>
               </li>
             </ul>

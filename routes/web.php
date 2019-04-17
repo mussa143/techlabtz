@@ -35,10 +35,9 @@ Route::get('/userprofile', function () {
     return view('user.profile');
 });
 
-Route::get('register', 'RegisterController@showRegistrationForm')->name('register');
-Route::post('register', 'Auth\RegisterController@register');
+//Route::get('register', 'RegisterController@index')->name('Registration');
 
-
+Route::resource('users','UserController');
 
 Auth::routes();
 

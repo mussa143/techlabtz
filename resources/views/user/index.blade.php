@@ -4,7 +4,7 @@
 
 <div class="row">
             <div class="col-md-12">
-            <a href="" class="btn btn=primary">Register Users</a>
+            <a href="{{ route('register') }}" class="btn btn=primary">Register Users</a>
               <div class="card">
               
                 <div class="card-header card-header-primary">
@@ -25,7 +25,7 @@
                           Address
                         </th>
                         <th>
-                          Phone
+                          Username
                         </th>
                         <th>
                           Designation
@@ -33,25 +33,26 @@
                         <th>
                           Emplpyed At
                         </th>
+                        <th>
+                          Action
+                        </th>
                       </thead>
                       <tbody>
-                        <tr>
+                      @foreach($users as $user)
+                          <tr>
+                          <td>{{$user->id}} </td>
+                          <td>{{$user->fname}}{{$user->lname}} </td>
+                          <td>{{$user->address}} </td>
+                          <td>{{$user->uname}} </td>
+                          <td>{{$user->role}} </td>
+                          <td>{{$user->created_at}} </td>
                           <td>
-                            1
-                          </td>
-                          <td>
-                            Dakota Rice
-                          </td>
-                          <td>
-                            Niger
-                          </td>
-                          <td>
-                            Oud-Turnhout
-                          </td>
-                          <td class="text-primary">
-                            $36,738
-                          </td>
+                          <a href="" class="btn btn-secondary"> view</a>
+                          <a href="" class="btn btn-primary"> edit</a>
+                          <a href="" class="btn btn-danger"> delete</a>
+                           </td>
                         </tr>
+                      @endforeach
                       </tbody>
                     </table>
                   </div>
