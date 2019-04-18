@@ -42,3 +42,8 @@ Route::resource('users','UserController');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('dashboard');
+
+Route::post('/logout', 'UserController@logout')->name('logout');
+
+Route::get('/profile', 'UserController@profile')->name('profile');
+

@@ -47,7 +47,7 @@
                           <td>{{$user->role}} </td>
                           <td>{{$user->created_at}} </td>
                           <td>
-                          <a href="" class="btn btn-secondary"> view</a>
+                          <a href="{{ route('users.show', $user->id) }}" class="btn btn-secondary"> view</a>
                           <a href="" class="btn btn-primary"> edit</a>
                           <a href="" class="btn btn-danger"> delete</a>
                            </td>

@@ -49,14 +49,12 @@ class UserController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function show($id)
-    {
-        
-            $users = DB::select('select * from users where id ="$id" ');
+{
+    $profiles = User::findOrFail($id);
+
+    return view('user.show')->withprofiles($profiles);
     
-            return view('user.view', ['users' => $users]);
-        
-    
-    }
+}
 
     /**
      * Show the form for editing the specified resource.
@@ -66,8 +64,30 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        //
+        return User::create([
+            'uname' => $data['uname'],
+            'fname' => $data['fname'],
+            'lname' => $data['lname'],
+            'email' => $data['email'],
+            'address' => $data['address'],
+            'password' => Hash::make($data['password']),
+        ]);
     }
+
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function profile($id)
+{
+    $profiles = User::findOrFail($id);
+
+    return view('user.profile')->withprofiles($profiles);
+    
+}
+
 
     /**
      * Update the specified resource in storage.
@@ -90,5 +110,10 @@ class UserController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function logout(){
+        Session::flush(); 
+        return Redirect::to('/');
     }
 }
