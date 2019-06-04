@@ -112,6 +112,10 @@ class UserController extends Controller
         //
     }
 
+    public function login(){
+        //
+    }
+
     public function logout(){
         Session::flush(); 
         return Redirect::to('/');

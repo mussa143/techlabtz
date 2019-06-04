@@ -35,7 +35,7 @@
       <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
+                    {{ config('app.name', 'TECHLABTZ') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
               <div class="card card-plain">
                 <div class="card-header" style="background-color:azure" >
                   <h3 class="card-title mt-0" STYLE="text-align:center"> TECHLABTZ MANAGEMENT SYSTEM ACCESS CENTER</h3>
-                  <p class="card-category"> PLEASE ENTER USERNAME AND PASSWORD TO ACCESS THE SYSTEM</p>
+                  <p class="card-category"  STYLE="text-align:center"> PLEASE ENTER USERNAME AND PASSWORD TO ACCESS THE SYSTEM</p>
                 </div>
                 <div class="card-body" style="padding-left:30px;">
                 <div class="row justify-content-center">

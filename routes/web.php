@@ -47,3 +47,7 @@ Route::post('/logout', 'UserController@logout')->name('logout');
 
 Route::get('/profile', 'UserController@profile')->name('profile');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
